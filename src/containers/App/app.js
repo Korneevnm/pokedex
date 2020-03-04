@@ -34,7 +34,7 @@ const App = () => {
         <Header handleClick={handleClick} />
 
         <Switch>
-          <Route path='/' exact>
+          <Route path='/pokedex/' exact>
             <IndexPage handleClick={handleClick} />
           </Route>
           <Route path='/types'>

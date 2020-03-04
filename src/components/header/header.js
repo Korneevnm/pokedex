@@ -11,7 +11,7 @@ const Header = ({ handleClick }) => {
     <div className='header'>
       <Title>Pokedex</Title>
       <div className='menu'>
-        <NavLink to='/' activeClassName=''>
+        <NavLink to='/pokedex/' activeClassName=''>
           Home
         </NavLink>
         <NavLink to='/types'>Types</NavLink>

@@ -1,16 +1,20 @@
 import React from 'react';
-import { Input } from 'antd';
+import { AutoComplete } from 'antd';
 import './styles.sass';
 
-const PokemonSearch = ({ handleClick }) => {
-  const { Search } = Input;
+import names from '../../utils/names';
 
+const PokemonSearch = ({ handleClick }) => {
   return (
     <div className='search'>
-      <Search
+      <AutoComplete
+        options={names}
         placeholder='Search Pokemon'
-        onSearch={value => value && handleClick(value)}
-        enterButton
+        allowClear={true}
+        onSelect={value => handleClick(value)}
+        filterOption={(inputValue, option) =>
+          option.value.toUpperCase().includes(inputValue.toUpperCase())
+        }
       />
     </div>
   );

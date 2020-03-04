@@ -11,10 +11,10 @@ const Header = ({ handleClick }) => {
     <div className='header'>
       <Title>Pokedex</Title>
       <div className='menu'>
-        <NavLink to='/pokedex/' activeClassName=''>
+        <NavLink to='/pokedex' activeClassName=''>
           Home
         </NavLink>
-        <NavLink to='/types'>Types</NavLink>
+        <NavLink to='/pokedex/types'>Types</NavLink>
       </div>
       <PokemonSearch handleClick={handleClick} />
     </div>

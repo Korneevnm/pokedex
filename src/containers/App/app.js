@@ -4,6 +4,7 @@ import axios from 'axios';
 import PokemonDetails from '../../components/pokemon-details';
 import Header from '../../components/header';
 import { IndexPage, TypesPage } from '../../components/pages';
+import { BackTop } from 'antd';
 import './styles.sass';
 
 const App = () => {
@@ -50,6 +51,8 @@ const App = () => {
         hideModal={hideModal}
         error={error && error}
       />
+
+      <BackTop />
     </div>
   );
 };

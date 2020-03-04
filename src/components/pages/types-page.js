@@ -42,8 +42,9 @@ const TypesPage = ({ handleClick }) => {
               pokemon['id'] = id;
               const index = list.findIndex(item => item.id === pokemon.id);
               if (index === -1) {
-                return list.push(pokemon);
+                list.push(pokemon);
               }
+              return false;
             })
           );
           setPokemons(list);

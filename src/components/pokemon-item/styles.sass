@@ -1,0 +1,59 @@
+.ant-card
+  position: relative
+  width: calc(20% - 20px)
+  p
+    color: rgba(0, 0, 0, 0.45)
+    margin: 0 0 5px
+  .types
+    p
+      margin: 0 8px 5px 0
+  .ant-card-meta-title
+    text-transform: capitalize
+    margin-bottom: 10px
+  .ant-card-body
+    padding: 15px 20px
+
+.ant-card-cover
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #eaedf2
+  padding: 10px
+  img
+    max-width: 96px
+
+.abilities
+  margin-top: 5px
+
+.stats
+  margin-top: 5px
+  p
+    margin: 0
+  li
+    font-size: 12px
+    &:before
+      top: 6px
+
+.id
+  position: absolute
+  top: 10px
+  left: 20px
+  font-size: 16px
+  font-weight: 500
+
+
+@media screen and (max-width: 1480px)
+  .ant-card
+    width: calc(25% - 20px)
+
+@media screen and (max-width: 992px)
+  .ant-card
+    width: calc(33.33% - 20px)
+
+@media screen and (max-width: 767px)
+  .ant-card
+    width: calc(50% - 20px)
+
+@media screen and (max-width: 500px)
+  .ant-card
+    width: 100%
